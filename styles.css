@@ -1,0 +1,121 @@
+/* Default styles */
+.toplogo img {
+  max-width: 400px;
+  height: auto;
+}
+
+.section1 {
+  background-color: rgb(245, 240, 230);
+  display: inline-block;
+  width: 100%;
+  font-size: 28px;
+}
+
+.section2 {
+  background-image: url(https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg);
+  color: white;
+  display: inline-block;
+  width: 100%;
+  font-size: 28px;
+}
+
+.section1 img, .section2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section3 {
+  background-color: #f5f0e6;
+  display: inline-block;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default 4-column grid */
+  background-color:  #f5f0e6;
+  padding: 10px;
+  gap: 25px;
+  max-height: 500px;
+  overflow-y: scroll; /* Makes the container scrollable */
+}
+
+.grid-item {
+  background-color: #182b49;
+  border: 1px solid  #f5f0e6;
+  padding: 20px;
+  font-size: 28px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  max-height: 500px;
+  overflow: auto;
+}
+
+body {
+  font-size: 28px;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+  scroll-margin-top: 80px;
+}
+
+ul {
+  position: sticky;
+  top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  font-size: 28px;
+}
+
+li {
+  float: left;
+  padding: 14px 16px;
+  font-size: 28px;
+}
+
+li a {
+  display: block;
+  color: #182b49;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #182b49;
+  color: #ffffff;
+}
+
+/* Media query for screens smaller than 800px */
+@media screen and (max-width: 800px) {
+
+  /* Hide anchor links */
+  .navbarmaybe ul, a[href^="#C"] {
+    display: none;
+  }
+
+  /* Adjust top logo size */
+  .toplogo img {
+    max-width: 75%;
+    height: auto;
+  }
+
+  /* Set header font-size */
+  h2 {
+    font-size: 24px;
+  }
+
+  /* Set paragraph font-size */
+  p {
+    font-size: 20px;
+  }
+
+  /* Change 4-column grid to 2-column grid */
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
