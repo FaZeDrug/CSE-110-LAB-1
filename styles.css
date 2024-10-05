@@ -31,12 +31,12 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Default 4-column grid */
+  grid-template-columns: repeat(4, 1fr); 
   background-color:  #f5f0e6;
   padding: 10px;
   gap: 25px;
   max-height: 500px;
-  overflow-y: scroll; /* Makes the container scrollable */
+  overflow-y: scroll;
 }
 
 .grid-item {
@@ -90,31 +90,25 @@ li a:hover {
   color: #ffffff;
 }
 
-/* Media query for screens smaller than 800px */
 @media screen and (max-width: 800px) {
 
-  /* Hide anchor links */
   .navbarmaybe ul, a[href^="#C"] {
     display: none;
   }
 
-  /* Adjust top logo size */
   .toplogo img {
     max-width: 75%;
     height: auto;
   }
 
-  /* Set header font-size */
   h2 {
     font-size: 24px;
   }
 
-  /* Set paragraph font-size */
   p {
     font-size: 20px;
   }
 
-  /* Change 4-column grid to 2-column grid */
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
